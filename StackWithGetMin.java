@@ -77,6 +77,10 @@ class MyStackWithGetMin {
     }
 
     int getMin() {
+        if (head==null){
+            System.out.println("No Min, Stack is Empty.");
+            return Integer.MIN_VALUE;
+        }
         return stackWithGetMin.peek();
     }
 }
